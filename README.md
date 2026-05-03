@@ -42,9 +42,10 @@ cd ITPM_Assigment1
 cd test_automation
 
 ## Step 3: Install required dependencies (one-time only)
-pip install -U pip
-pip install playwright openpyxl
-python -m playwright install
+
+- pip install -U pip
+- pip install playwright openpyxl
+- python -m playwright install
 
 ### ▶️ How to Run the Tests
 
