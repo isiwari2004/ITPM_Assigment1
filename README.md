@@ -32,7 +32,28 @@ Make sure you have installed:
 ## 🚀 Installation & Setup
 
 ### 🔹 Step 1: Clone the repository
-```bash
-git clone https://github.com/isiwari2004/ITPM_Assigment1.git
 
+## Step 1: Clone the repository
+
+git clone https://github.com/isiwari2004/ITPM_Assigment1.git
 cd ITPM_Assigment1
+
+## Step 2: Navigate to the test_automation folder
+cd test_automation
+
+## Step 3: Install required dependencies (one-time only)
+pip install -U pip
+pip install playwright openpyxl
+python -m playwright install
+
+### ▶️ How to Run the Tests
+
+## Step 1: Go back to the root folder
+cd ..
+
+## Step 2: Run the Playwright script
+python test_automation/test_automation.py --excel "test_automation/Assignment 1 - Test cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
+
+## Step 3: Check the results
+After the script finishes, open Assignment 1 - Test cases.xlsx. The Actual output and Status columns will be filled automatically.
+
